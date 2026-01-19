@@ -1,16 +1,35 @@
+html{
+    background-image: linear-gradient(to bottom, rgb(20, 32, 30), rgb(74, 113, 107));
+    background-attachment: fixed;
+}
 body {
-    font-family:'Courier New', Courier, monospace;
-    
+    font-family:'Courier New', Courier, monospace;    
 }
 h1 {
     text-align: center;
+    color: white;
+}
+p{
+    color: white;
+    font-weight:bold;
+    font-size:xx-large;
+    text-align:center;
 }
 button {
     font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    width: 15%;
+    margin-left:7.5%;
 }
 input {
     font-size: xx-large;
-    width: 45%;
+    width: 40%;
     align-content: center;
     text-align: center;
+    margin-left:6%;
+}
+#clear {
+    align-content:center;
 }

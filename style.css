@@ -8,6 +8,8 @@ body {
 h1 {
     text-align: center;
     color: white;
+    background-color:black;
+    
 }
 p{
     color: white;
@@ -32,4 +34,8 @@ input {
 }
 #clear {
     align-content:center;
+}
+#result{
+    background-color: blue;
+    font-size: 75px;
 }

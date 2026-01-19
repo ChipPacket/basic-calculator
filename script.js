@@ -57,26 +57,26 @@ function calculate(operator) {
 //          /////   BUTTONS     /////
 document.getElementById('add').addEventListener("click", function(){
     // simpler way
-    result = calculate("add");
-    document.getElementById('result').textContent = "Result: " +result;
+    //result = calculate("add");
+    //document.getElementById('result').textContent = "Result: " +result;
 
     // condensed way 
-    document.getElementById('result').textContent = `Result: ${calculate('add')}`;
+    document.getElementById('result').textContent = `${calculate('add')}`;
 });
 
 document.getElementById('subtract').addEventListener("click", function(){
     // condensed way 
-    document.getElementById('result').textContent = `Result: ${calculate('subtract')}`;
+    document.getElementById('result').textContent = `${calculate('subtract')}`;
 }); 
 
 document.getElementById('multiply').addEventListener("click", function(){
     // condensed way 
-    document.getElementById('result').textContent = `Result: ${calculate('multiply')}`;
+    document.getElementById('result').textContent = `${calculate('multiply')}`;
 }); 
 
 document.getElementById('divide').addEventListener("click", function(){
     // condensed way 
-    document.getElementById('result').textContent = `Result: ${calculate('divide')}`;
+    document.getElementById('result').textContent = `${calculate('divide')}`;
 }); 
 
 document.getElementById('clear').addEventListener("click", function(){
@@ -86,3 +86,54 @@ document.getElementById('clear').addEventListener("click", function(){
     document.getElementById('num2').textContent = "";
 
 }); 
+
+document.getElementById('double').addEventListener("click", function(){
+    // double current result
+    result = document.getElementById('result').textContent;
+    result = result*2;
+
+    document.getElementById('result').textContent = result;
+}); 
+
+document.getElementById('half').addEventListener("click", function(){
+    // double current result
+    result = document.getElementById('result').textContent;
+    result = result/2;
+
+    document.getElementById('result').textContent = result;
+}); 
+
+document.getElementById('random').addEventListener("click", function(){
+    // generate random number for all options
+    random = Math.floor(Math.random() * 6) + 1;
+
+    // switch statement
+    switch (random){
+        case 1: // add
+            result = calculate("add");
+            break;
+
+        case 2: // subtract
+            result = calculate("subtract");
+            break;
+
+        case 3: // multiply
+            result = calculate("multiply");
+            break;
+
+        case 4: //divide
+            result = calculate("divide");
+            break;
+
+        case 5: // double
+            result = (calculate("add")*2);
+            break;
+
+        case 6: // half
+            result = (calculate("add")/2);
+            break;
+
+        default:
+            // maths error
+    }
+});

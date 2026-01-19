@@ -1,3 +1,16 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    
+}
+h1 {
+    text-align: center;
+}
 button {
-    font-family:'Courier New', Courier, monospace
+    font-size: xx-large;
+}
+input {
+    font-size: xx-large;
+    width: 45%;
+    align-content: center;
+    text-align: center;
 }
